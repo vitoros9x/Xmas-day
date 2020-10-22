@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #FF3131;
+  --top-bar-color: #666666;
+  --primary-text-color: #000000;
+  --border: #f2f2f2;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  src: url("../font/UTM Silk Script.ttf");
+  font-family: UTM;
+}
+
+@font-face {
+  src: url("../font/UVN Mua Thu.ttf");
+  font-family: UVN;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  line-height: 1.6rem;
+}
+
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid__full-width {
+  width: 100%;
+}
+
+.grid__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/*# sourceMappingURL=base.css.map */
