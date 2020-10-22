@@ -205,15 +205,15 @@
           transform: unset;
 }
 
-.body .products__freeship {
+.body .shopping__freeship {
   padding-top: 32px;
 }
 
-.body .products__freeship img {
+.body .shopping__freeship img {
   width: 100%;
 }
 
-.body .products__freeship-effect {
+.body .shopping__freeship-effect {
   opacity: 0;
   line-height: 1;
   text-align: center;
@@ -227,7 +227,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
-.body .products__freeship-border {
+.body .shopping__freeship-border {
   position: absolute;
   top: 5%;
   bottom: 5%;
@@ -238,19 +238,40 @@
   cursor: default;
 }
 
-.body .products__freeship-effect p:first-child {
+.body .shopping__freeship-effect p:first-child {
   font-size: 55px;
   font-family: "UVN";
 }
 
-.body .products__freeship-effect p:last-child {
+.body .shopping__freeship-effect p:last-child {
   font-size: 68px;
   font-family: "Roboto";
 }
 
-.body .products__freeship > div:hover .products__freeship-effect {
+.body .shopping__freeship > div:hover .shopping__freeship-effect {
   opacity: 1;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+.body .shopping__sale {
+  padding-top: 54px;
+}
+
+.body__title {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.body__title p {
+  font-size: 24px;
+  font-family: "UVN";
+  margin-bottom: 0;
+}
+
+.body__title h2 {
+  font-size: 45px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */

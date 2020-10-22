@@ -137,9 +137,12 @@
   }
 }
 
-// slider
+
 
 .body {
+
+  // slider
+
   .body__slider {
     height: 550px;
     max-height: 100%;
@@ -193,7 +196,9 @@
     }
   }
 
-  .products {
+  // sản phẩm
+  
+  .shopping {
     
     &__freeship {
       padding-top: 32px;
@@ -236,10 +241,31 @@
         font-family: "Roboto";
       }
 
-      > div:hover .products__freeship-effect {
+      > div:hover .shopping__freeship-effect {
         opacity: 1;
         transition: .5s;
-      }
+      } 
+    }
+
+    &__sale {
+      padding-top: 54px;
     }
   }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 38px;
+
+    p {
+      font-size: 24px;
+      font-family: "UVN";
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 45px;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+  } 
 }
