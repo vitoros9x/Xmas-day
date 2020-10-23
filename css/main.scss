@@ -249,6 +249,12 @@
 
     &__sale {
       padding-top: 54px;
+      padding-bottom: 46px;
+    }
+
+    &__product {
+      display: flex;
+      justify-content: space-between;
     }
   }
 

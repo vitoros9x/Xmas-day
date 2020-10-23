@@ -256,6 +256,16 @@
 
 .body .shopping__sale {
   padding-top: 54px;
+  padding-bottom: 46px;
+}
+
+.body .shopping__product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .body__title {

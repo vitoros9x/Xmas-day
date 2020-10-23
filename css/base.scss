@@ -25,6 +25,10 @@ html {
     line-height: 1.6rem;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -42,4 +46,124 @@ html {
 
 .row {
     margin: 0;
+}
+
+#color {
+    display: none;
+}
+
+.change-color {
+    position: fixed;
+    top: 50%;
+    left: -42px;
+    z-index: 1;
+    background-color: #cacaca;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 5px;
+    cursor: pointer;
+
+
+    &__primary {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: var(--primary-color);
+        margin-left: 5px;
+        padding: 5px;
+        border-radius: 50%;
+    }
+
+    
+}
+
+// style nút đổi theme
+
+.change-color:hover {
+    left: 0;
+    transition: .5s;
+}
+
+#color:checked ~ .change-color {
+    left: 0;
+}
+
+.color__selection {
+    background: white;
+    position: fixed;
+    z-index: 2;
+    top: 55.2%;
+    left: 41.5px;
+    padding: 5px;
+    border-radius: 5px  ;;
+
+    span {
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin-bottom: 5px;
+        border-radius: 50%;
+    }
+
+    .red {
+        background-color: var(--primary-color);
+    }
+
+    .blue {
+        background-color: blue;
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    .pink {
+        background-color: pink;
+    }
+}
+
+
+// ô sản phẩm
+
+.product {
+    width: 17%;
+    text-align: center;
+
+    img {
+        width: 100%;
+    }
+
+    &-title {
+        font-size: 14px;
+        margin-top: 26px;
+        margin-bottom: 16px;
+    }
+
+    &-price {
+        font-size: 16px;
+        color: var(--primary-color);
+        margin-bottom: 18px;
+    }
+
+    &-buy {
+        border: 1px solid #4b4b4b;
+        border-radius: 999px;
+        font-size: 13px;
+        color: #4b4b4b;
+        padding: 10px 30px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        margin: auto;
+    }
+
+    &-buy:hover {
+        color: white;
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        transition: .5s;  
+    }
 }

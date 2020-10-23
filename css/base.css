@@ -26,6 +26,10 @@ html {
   line-height: 1.6rem;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .grid {
   width: 1200px;
   max-width: 100%;
@@ -46,5 +50,129 @@ html {
 
 .row {
   margin: 0;
+}
+
+#color {
+  display: none;
+}
+
+.change-color {
+  position: fixed;
+  top: 50%;
+  left: -42px;
+  z-index: 1;
+  background-color: #cacaca;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.change-color__primary {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary-color);
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.change-color:hover {
+  left: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#color:checked ~ .change-color {
+  left: 0;
+}
+
+.color__selection {
+  background: white;
+  position: fixed;
+  z-index: 2;
+  top: 55.2%;
+  left: 41.5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.color__selection span {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+
+.color__selection .red {
+  background-color: var(--primary-color);
+}
+
+.color__selection .blue {
+  background-color: blue;
+}
+
+.color__selection .green {
+  background-color: green;
+}
+
+.color__selection .pink {
+  background-color: pink;
+}
+
+.product {
+  width: 17%;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product-title {
+  font-size: 14px;
+  margin-top: 26px;
+  margin-bottom: 16px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: var(--primary-color);
+  margin-bottom: 18px;
+}
+
+.product-buy {
+  border: 1px solid #4b4b4b;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #4b4b4b;
+  padding: 10px 30px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.product-buy:hover {
+  color: white;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 /*# sourceMappingURL=base.css.map */
