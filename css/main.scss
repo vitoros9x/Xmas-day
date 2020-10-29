@@ -196,6 +196,27 @@
     }
   }
 
+
+  // Đề mục thân trang 
+
+  &__title {
+    text-align: center;
+    margin-bottom: 38px;
+
+    p {
+      font-size: 24px;
+      font-family: "UVN";
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 45px;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+      font-weight: 300;
+    }
+  } 
+
   // sản phẩm
   
   .shopping {
@@ -249,30 +270,57 @@
 
     &__sale {
       padding-top: 54px;
-      padding-bottom: 46px;
+      padding-bottom: 15px;
     }
 
     &__product {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__block-img {
+      justify-content: space-between;
+
+      .block-col {
+        width: 32%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .block-col:nth-child(2) {
+        flex-direction: column;
+
+        img:first-child {
+          flex: 1;
+          padding-bottom: 25px;
+        }
+      }
+    }
+
+    &__all-product {
+      padding-top: 54px;
+    }
+
+    &__category {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+
+      li {
+        font-size: 16px;
+        padding-right: 24px;
+        margin-bottom: 16px;
+        cursor: pointer;
+      }
+    }
+
+    &__product.tab-2, &__product.tab-3 {
+      display: none;
     }
   }
 
-  &__title {
-    text-align: center;
-    margin-bottom: 38px;
-
-    p {
-      font-size: 24px;
-      font-family: "UVN";
-      margin-bottom: 0;
-    }
-
-    h2 {
-      font-size: 45px;
-      color: var(--primary-color);
-      margin-bottom: 10px;
-      font-weight: 300;
-    }
-  } 
+  
 }

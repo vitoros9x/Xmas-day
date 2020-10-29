@@ -205,6 +205,24 @@
           transform: unset;
 }
 
+.body__title {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.body__title p {
+  font-size: 24px;
+  font-family: "UVN";
+  margin-bottom: 0;
+}
+
+.body__title h2 {
+  font-size: 45px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
 .body .shopping__freeship {
   padding-top: 32px;
 }
@@ -256,7 +274,7 @@
 
 .body .shopping__sale {
   padding-top: 54px;
-  padding-bottom: 46px;
+  padding-bottom: 15px;
 }
 
 .body .shopping__product {
@@ -266,23 +284,60 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.body__title {
-  text-align: center;
-  margin-bottom: 38px;
+.body .shopping__block-img {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.body__title p {
-  font-size: 24px;
-  font-family: "UVN";
-  margin-bottom: 0;
+.body .shopping__block-img .block-col {
+  width: 32%;
 }
 
-.body__title h2 {
-  font-size: 45px;
-  color: var(--primary-color);
-  margin-bottom: 10px;
-  font-weight: 300;
+.body .shopping__block-img .block-col img {
+  width: 100%;
+}
+
+.body .shopping__block-img .block-col:nth-child(2) {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body .shopping__block-img .block-col:nth-child(2) img:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-bottom: 25px;
+}
+
+.body .shopping__all-product {
+  padding-top: 54px;
+}
+
+.body .shopping__category {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body .shopping__category li {
+  font-size: 16px;
+  padding-right: 24px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.body .shopping__product.tab-2, .body .shopping__product.tab-3 {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

@@ -139,8 +139,10 @@ a {
 }
 
 .product {
-  width: 17%;
+  -ms-flex-preferred-size: 17%;
+      flex-basis: 17%;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .product img {
@@ -149,14 +151,14 @@ a {
 
 .product-title {
   font-size: 14px;
-  margin-top: 26px;
-  margin-bottom: 16px;
+  margin-top: 18px;
+  margin-bottom: 5px;
 }
 
 .product-price {
   font-size: 16px;
   color: var(--primary-color);
-  margin-bottom: 18px;
+  margin-bottom: 8px;
 }
 
 .product-buy {
@@ -212,5 +214,9 @@ a {
   opacity: 1;
   -webkit-transition: .25s linear;
   transition: .25s linear;
+}
+
+.active {
+  color: var(--primary-color);
 }
 /*# sourceMappingURL=base.css.map */
