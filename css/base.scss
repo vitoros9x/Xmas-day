@@ -79,6 +79,17 @@ a {
     
 }
 
+// quick css popular
+
+.absolute {
+    position: absolute;
+}
+
+.flex {
+    display: flex;
+}
+
+
 // style nút đổi theme
 
 .change-color:hover {
@@ -148,7 +159,7 @@ a {
     }
 
     &-buy {
-        border: 1px solid #4b4b4b;
+        border: 1px solid #c7c7c7;
         border-radius: 999px;
         font-size: 13px;
         color: #4b4b4b;
@@ -165,5 +176,31 @@ a {
         background-color: var(--primary-color);
         border-color: var(--primary-color);
         transition: .5s;  
+    }
+
+    &__link {
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+
+        .absolute {
+            color: gray;
+            background: white;
+            padding: 18px;
+            font-size: 16px;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+    }
+
+    &__link:hover .absolute {
+        opacity: 1;
+        transition: .25s linear;
     }
 }
