@@ -321,6 +321,12 @@
       display: none;
     }
   }
+}
 
-  
+// banner nhỏ
+
+.small-banner {
+  background: url('../img/small-banner.jpg') no-repeat;
+  background-size: cover;
+  height: 322px;
 }

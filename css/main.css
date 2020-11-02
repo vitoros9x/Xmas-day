@@ -340,4 +340,10 @@
 .body .shopping__product.tab-2, .body .shopping__product.tab-3 {
   display: none;
 }
+
+.small-banner {
+  background: url("../img/small-banner.jpg") no-repeat;
+  background-size: cover;
+  height: 322px;
+}
 /*# sourceMappingURL=main.css.map */
