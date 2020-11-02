@@ -223,6 +223,10 @@
   font-weight: 300;
 }
 
+.body .shopping {
+  padding-bottom: 30px;
+}
+
 .body .shopping__freeship {
   padding-top: 32px;
 }
@@ -342,8 +346,38 @@
 }
 
 .small-banner {
-  background: url("../img/small-banner.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url("../img/small-banner.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6)), url("../img/small-banner.jpg") no-repeat;
   background-size: cover;
   height: 322px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.small-banner img {
+  margin-bottom: 20px;
+}
+
+.small-banner p {
+  color: white;
+  font-size: 16px;
+  max-width: 810px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.blog {
+  padding-top: 50px;
 }
 /*# sourceMappingURL=main.css.map */

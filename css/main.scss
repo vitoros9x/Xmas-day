@@ -220,6 +220,7 @@
   // sản phẩm
   
   .shopping {
+    padding-bottom: 30px;
     
     &__freeship {
       padding-top: 32px;
@@ -326,7 +327,30 @@
 // banner nhỏ
 
 .small-banner {
-  background: url('../img/small-banner.jpg') no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .6)), url('../img/small-banner.jpg') no-repeat;
   background-size: cover;
   height: 322px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: white;
+    font-size: 16px;
+    max-width: 810px;
+    text-align: center;
+    font-weight: 300;
+  }
+}
+
+
+// blog
+
+.blog {
+  padding-top: 50px;
 }
