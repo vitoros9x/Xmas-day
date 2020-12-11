@@ -52,6 +52,11 @@ a {
     display: none;
 }
 
+.devided {
+    height: 1px;
+    background: #b4b4b48e;
+}
+
 .change-color {
     position: fixed;
     top: 50%;
@@ -79,6 +84,8 @@ a {
     
 }
 
+
+
 // quick css popular
 
 .absolute {
@@ -105,17 +112,18 @@ a {
     background: white;
     position: fixed;
     z-index: 2;
-    top: 55.2%;
+    top: 54%;
     left: 41.5px;
     padding: 5px;
-    border-radius: 5px  ;;
+    border-radius: 5px;
+    display: none;
 
     span {
         width: 30px;
         height: 30px;
         display: block;
         margin-bottom: 5px;
-        border-radius: 50%;
+		border-radius: 50%;
     }
 
     .red {
